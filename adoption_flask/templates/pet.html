@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+{% block button %}
+    <a class="add-pet-btn" href="{{ url_for('add_pet') }}" alt="Add Pet">
+        <i class="fas fa-plus"></i>
+        Pet
+    </a>
+{% endblock %}
+{% block content %}
+    </section>
+    <section id="pet-data">
+        <img src="https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg" alt="Fluff the corgi">
+        <div id="pet-name">
+            <h2>Name</h2>
+            <p>Fluff</p>
+        </div>
+        <div id="left-col">
+            <div>
+                <h2>Age</h2>
+                <p>5 years</p>
+            </div>
+            <div>
+                <h2>Breed</h2>
+                <p>Corgi</p>
+            </div>
+            <div>
+                <h2>Color</h2>
+                <p>Brown</p>
+            </div>
+            <div>
+                <h2>Size</h2>
+                <p>Small</p>
+            </div>
+        </div>
+        <div id="right-col">
+            <div>
+                <h2>Weight</h2>
+                <p>35lbs</p>
+            </div>
+            <div>
+                <h2>Gender</h2>
+                <p>Male</p>
+            </div>
+            <div>
+                <h2>Spayed/Neutered</h2>
+                <p>Yes</p>
+            </div>
+            <div>
+                <h2>Housetrained</h2>
+                <p>Yes</p>
+            </div>
+        </div>
+        <div id="description">
+            <h2>Description</h2>
+            <p>This is a great dog. The best dog in all the world</p>
+        </div>
+    </section>
+    <section id="edit-delete">
+        <a href="#"><i class="far fa-edit"></i>Edit</a>
+        <a href="#"><i class="far fa-trash-alt"></i>Delete</a>
+    </section>
+{% endblock %}
