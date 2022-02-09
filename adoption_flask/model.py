@@ -39,4 +39,4 @@ class Pet(db.Model):
                 Gender: {self.gender}
                 Spay/Neuter: {self.spay}
                 Housetrained: {self.house_train}
-                Description: {self.description}>'''
+                Description: {self.description})>'''

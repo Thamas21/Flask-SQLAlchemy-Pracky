@@ -1,5 +1,5 @@
-from flask import (Flask, render_template,
-                url_for, request, redirect)
+from flask import (render_template,
+                   url_for, request, redirect)
 from model import (db, Pet, app)
 
 
