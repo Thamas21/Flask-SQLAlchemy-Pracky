@@ -10,52 +10,52 @@
     <section id="pet-data">
         <img src="https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg" alt="Fluff the corgi">
         <div id="pet-name">
-            <h2>Name</h2>
-            <p>Fluff</p>
+            <h2>Pet Name</h2>
+            <p>{{ pet.name }}</p>
         </div>
         <div id="left-col">
             <div>
                 <h2>Age</h2>
-                <p>5 years</p>
+                <p>{{ pet.age }} </p>
             </div>
             <div>
                 <h2>Breed</h2>
-                <p>Corgi</p>
+                <p>{{ pet.breed }}</p>
             </div>
             <div>
                 <h2>Color</h2>
-                <p>Brown</p>
+                <p> {{ pet.color }}</p>
             </div>
             <div>
                 <h2>Size</h2>
-                <p>Small</p>
+                <p>{{ pet.size }}</p>
             </div>
         </div>
         <div id="right-col">
             <div>
                 <h2>Weight</h2>
-                <p>35lbs</p>
+                <p>{{ pet.weight }}</p>
             </div>
             <div>
                 <h2>Gender</h2>
-                <p>Male</p>
+                <p>{{ pet.gender }}</p>
             </div>
             <div>
                 <h2>Spayed/Neutered</h2>
-                <p>Yes</p>
+                <p>{{ pet.spay }}</p>
             </div>
             <div>
                 <h2>Housetrained</h2>
-                <p>Yes</p>
+                <p>{{ pet.house_train }}</p>
             </div>
         </div>
         <div id="description">
             <h2>Description</h2>
-            <p>This is a great dog. The best dog in all the world</p>
+            <p>{{ pet.description }}</p>
         </div>
     </section>
     <section id="edit-delete">
-        <a href="#"><i class="far fa-edit"></i>Edit</a>
-        <a href="#"><i class="far fa-trash-alt"></i>Delete</a>
+        <a href="{{ url_for('editpet', id=pet.id) }}"><i class="far fa-edit"></i>Edit</a>
+        <a href="{{ url_for('delete_pet', id=pet.id )}}"><i class="far fa-trash-alt"></i>Delete</a>
     </section>
 {% endblock %}
